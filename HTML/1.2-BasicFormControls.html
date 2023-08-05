@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic Form Controls</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+
+                box-sizing: border-box;
+
+                /* border: 1px solid black; */
+            }
+            body {
+                min-height: 100vh;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                background-color: rgb(19, 198, 126);
+            }
+            .form-container {
+                background-color: white;
+                min-height: 100px;
+                min-width: 100px;
+                border-radius: 5px;
+
+                padding: 50px;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                gap: 20px;
+
+                & input {
+                    min-width: 400px;
+                    border: 1px solid gray;
+                    border-radius: 3px;
+                    padding: 7px;
+                }
+
+                & textarea {
+                    min-width: 400px;
+                    border: 1px solid gray;
+                    border-radius: 3px;
+                    padding: 7px;
+                }
+
+                & select {
+                    min-width: 400px;
+                    border: 1px solid gray;
+                    border-radius: 3px;
+                    padding: 7px;
+                }
+
+                & input[type="checkbox"] {
+                    min-width: 0px;
+                }
+                & input[type="radio"] {
+                    min-width: 0px;
+                }
+
+                .term-condition {
+                    & div {
+                        padding: 0px 0px 5px 0px;
+                    }
+                }
+                .gender {
+                    & div {
+                        padding: 0px 0px 10px 0px;
+                    }
+                }
+
+                .submit-button {
+                    background-color: rgb(19, 198, 126);
+                    border: 0px;
+                    color: white;
+                    padding: 5px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="form-container">
+            <form action="#" method="POST">
+                <label for="">
+                    <div>First Name</div>
+                    <div><input type="text" /></div>
+                </label>
+                <label for="">
+                    <div>Last Name</div>
+                    <div><input type="text" /></div>
+                </label>
+                <label for="">
+                    <div>Select State</div>
+                    <div>
+                        <select name="" id="">
+                            <option value="">Gujarat</option>
+                        </select>
+                    </div>
+                </label>
+                <label for="" class="gender">
+                    <div>Gender</div>
+                    <div>
+                        <input type="radio" name="gender" id="male" />
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" />
+                        <label for="female">Female</label>
+                    </div>
+                </label>
+                <label for="">
+                    <div>Address</div>
+                    <div>
+                        <textarea name="" id="" rows="5"></textarea>
+                    </div>
+                </label>
+                <label for="" class="term-condition">
+                    <div>
+                        <input type="checkbox" name="" id="" />
+                        <span> Please accept terms & condition </span>
+                    </div>
+                </label>
+
+                <button class="submit-button">Submit</button>
+            </form>
+        </section>
+    </body>
+</html>
