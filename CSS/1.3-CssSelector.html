@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Css Selector</title>
+        <style>
+            /* Universal Selector */
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            /* Psudo class */
+            :root {
+                font-family: "Lucida Sans", "Lucida Sans Regular",
+                    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+                    sans-serif;
+                font-size: 2rem;
+            }
+
+            /* Element Selector */
+            body {
+                background-image: linear-gradient(45deg, #ffadec, #c497ef);
+                min-height: 100vh;
+                padding: 50px;
+            }
+
+            /* Class Selector */
+            .heading {
+                color: white;
+            }
+
+            /* Id selector */
+            #paragraph {
+                margin-top: 50px;
+                color: rgb(129, 108, 152);
+            }
+
+            /* Psudo element */
+            #paragraph::first-letter {
+                font-size: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">This is heading</h1>
+        <p id="paragraph">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque eum
+            beatae veniam! Totam voluptatibus voluptas possimus. Laudantium
+            necessitatibus quae nam harum commodi dolor voluptas dolorum
+            consequuntur iusto eius aperiam, dignissimos repellendus libero quia
+            nesciunt suscipit molestiae! Ratione illo necessitatibus
+            repellendus, a vero quisquam eum iste esse sit neque ad, facere
+            laudantium unde enim nulla mollitia. Odit ipsum sit minima maiores
+            magni, eveniet tenetur porro nisi aut dolores non similique maxime
+            esse aperiam molestiae, explicabo delectus. Perferendis nesciunt
+            rerum quis quidem ullam assumenda reprehenderit nisi debitis
+            accusamus repellat doloribus numquam, porro necessitatibus fugit,
+            qui enim. Enim expedita molestias tempora hic cum.
+        </p>
+    </body>
+</html>
