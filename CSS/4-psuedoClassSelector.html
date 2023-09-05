@@ -23,12 +23,84 @@
             a:active {
                 color: #0000ff;
             }
+
+            /*  */
+            p:first-child {
+                color: blue;
+            }
+            p:last-child {
+                background: lightpink;
+            }
+
+            /*  */
+            q:lang(fr) {
+                background: lightblue;
+            }
+
+            input:disabled {
+                background-color: gray;
+            }
+            input:enabled {
+                background-color: lightgreen;
+            }
+            input:focus {
+                background-color: lightcoral;
+            }
+            input:in-range {
+                border: 2px solid red;
+            }
+            input:invalid {
+                background-color: red;
+            }
+
+            p:empty {
+                padding: 5px;
+                background-color: palevioletred;
+            }
+
+            .first-of-type-class p:first-of-type {
+                background: red;
+            }
+            .first-of-type-class p:last-of-type {
+                background: lightgrey;
+            }
         </style>
     </head>
     <body>
         <section>
             <a href="#">This is link</a>
         </section>
-        <section></section>
+        <hr />
+        <section>
+            <p>This is first child</p>
+            <p>This is second child</p>
+            <p>This is third child</p>
+        </section>
+        <hr />
+        <section>
+            <p>Some text <q lang="fr">A quote in a paragraph</q> Some text.</p>
+        </section>
+        <hr />
+        <section>
+            <input type="text" name="" id="" disabled />
+            <br />
+            <p></p>
+            <br />
+            <input type="text" name="" id="" />
+        </section>
+        <hr />
+        <section class="first-of-type-class">
+            <h1>Hello</h1>
+            <p>The first paragraph.</p>
+            <p>The second paragraph.</p>
+            <p>The third paragraph.</p>
+            <p>The fourth paragraph.</p>
+            <div></div>
+        </section>
+        <hr />
+        <section>
+            <input type="number" min="5" max="10" value="7" />
+            <input type="email" name="" id="" />
+        </section>
     </body>
 </html>

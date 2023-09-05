@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Psuedo Elemenet Selector</title>
+        <style>
+            p::first-line {
+                color: red;
+            }
+            p::first-letter {
+                color: black;
+                font-size: 2rem;
+            }
+
+            .before-psuedo-element::before {
+                content: "Before Psuedo Element";
+                color: lightblue;
+                font-size: 2rem;
+            }
+            .before-psuedo-element::after {
+                content: "After Psuedo Element";
+                color: lightblue;
+                font-size: 2rem;
+            }
+
+            ::marker {
+                color: red;
+            }
+
+            ::selection {
+                background-color: lightblue;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- ::first-line ::first-letter -->
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                facilis quis eos atque autem? Vero nisi odio at nulla fugiat, ad
+                neque quo qui cum ea soluta inventore natus molestiae doloremque
+                quos quidem nam explicabo reiciendis et earum saepe voluptate
+                eum. Tempora velit accusantium culpa, fugit quae magnam porro
+                rem facere inventore error quaerat. Quaerat tempore amet placeat
+                harum quod optio dolore excepturi voluptates magni obcaecati est
+                consequuntur quia accusamus, commodi distinctio quos cumque
+                perferendis reiciendis laudantium consequatur sit. Quisquam
+                dolorum exercitationem quod blanditiis asperiores nostrum
+                dolores facere, a fuga cumque, repellat, delectus nobis eaque
+                veniam quidem modi fugit quas.
+            </p>
+        </section>
+        <hr />
+
+        <!-- ::before -->
+        <section>
+            <div class="before-psuedo-element">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum aperiam sed doloremque commodi eos optio harum
+                repellendus recusandae a accusamus illum dolorum ab eum quos,
+                ad, culpa repellat eaque reprehenderit?
+            </div>
+        </section>
+        <hr />
+
+        <!-- ::marker -->
+        <section>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+                <li>Banana</li>
+                <li>Pineapple</li>
+                <li>Orange</li>
+            </ul>
+        </section>
+        <hr />
+    </body>
+</html>

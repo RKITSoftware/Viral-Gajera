@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute Selector</title>
+        <style>
+            a[href] {
+                color: red;
+            }
+
+            a[href="https://www.google.com"]
+            {
+                color: green;
+            }
+
+            abbr[title~="viral"] {
+                color: blue;
+            }
+
+            [class|="top"] {
+                background: yellow;
+            }
+
+            p[class^="top"] {
+                background: lightblue;
+            }
+
+            p[class$="word"] {
+                background: lightgreen;
+            }
+
+            p[class*="worr"] {
+                background: lightpink;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- [attribute] -->
+        <a href="#">Click Here</a>
+        <hr />
+
+        <!-- [attribute='value'] -->
+        <a href="https://www.google.com">Click Here</a>
+        <hr />
+
+        <!-- [attribute~='value'] -->
+        <abbr title="my name is viral">Hover me</abbr>
+        <hr />
+
+        <!-- [attribute|='value'] -->
+        <h1 class="top-header">Welcome</h1>
+        <hr />
+
+        <!-- [attribute^='value'] -->
+        <p class="top-text">Hello world!</p>
+        <hr />
+
+        <!-- [attribute$='value'] -->
+        <p class="bottom-word">Hello world!</p>
+        <hr />
+
+        <!-- [attribure*='value'] -->
+        <p class="bottom-worrd">Hello world!</p>
+    </body>
+</html>
