@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Background</title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            .bg-color {
+                min-height: 100vh;
+                background-color: lightblue;
+            }
+            .opacity {
+                min-height: 100vh;
+                background-color: rgba(0, 0, 0);
+                opacity: 0.5;
+            }
+            .bg-image {
+                min-height: 100vh;
+                background-image: url("./1.jpeg");
+                background-position: center top;
+            }
+            .bg-repeat {
+                min-height: 100vh;
+                background-image: url("./2.png");
+                background-repeat: repeat;
+            }
+            .bg-postion {
+                min-height: 100vh;
+                background-image: url("./2.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .bg-attechment {
+                min-height: 100vh;
+                background-image: url("./1.jpeg");
+                background-position: center top;
+                background-attachment: fixed;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section class="bg-color"></section>
+        <section class="opacity"></section>
+        <section class="bg-image"></section>
+        <section class="bg-repeat"></section>
+        <section class="bg-postion"></section>
+        <section class="bg-attechment"></section>
+    </body>
+</html>
