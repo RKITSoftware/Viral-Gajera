@@ -32,6 +32,16 @@
                 background-color: lightblue;
                 color: black;
             }
+
+            .empty-element div {
+                background-color: lightblue;
+            }
+            .empty-element div::before {
+                content: "Before Psuedo Element";
+            }
+            .empty-element div::after {
+                content: "After Psuedo Element";
+            }
         </style>
     </head>
     <body>
@@ -74,6 +84,10 @@
                 <li>Pineapple</li>
                 <li>Orange</li>
             </ul>
+        </section>
+
+        <section class="empty-element">
+            <div>Hello</div>
         </section>
         <hr />
     </body>

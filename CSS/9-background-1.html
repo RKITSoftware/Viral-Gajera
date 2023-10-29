@@ -39,7 +39,36 @@
                 background-image: url("./1.jpeg");
                 background-position: center top;
                 background-attachment: fixed;
-                
+            }
+
+            .linear-gradient {
+                width: 100%;
+                height: 100vh;
+                background: linear-gradient(
+                    to right,
+                    red 0%,
+                    red 20%,
+                    green 20%,
+                    green 40%,
+                    blue 40%,
+                    blue 60%,
+                    purple 60%,
+                    purple 80%,
+                    yellow 80%,
+                    yellow 100%
+                );
+            }
+            .radial-gradient {
+                width: 100%;
+                height: 100vh;
+                background: radial-gradient(
+                    circle,
+                    red,
+                    green,
+                    blue,
+                    purple,
+                    yellow
+                );
             }
         </style>
     </head>
@@ -50,5 +79,7 @@
         <section class="bg-repeat"></section>
         <section class="bg-postion"></section>
         <section class="bg-attechment"></section>
+        <section class="linear-gradient"></section>
+        <section class="radial-gradient"></section>
     </body>
 </html>
