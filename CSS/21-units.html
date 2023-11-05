@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Units</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            :root {
+                font-size: 10px;
+                line-height: 13px;
+                /* width: 1000px; */
+                /* height: 1000px; */
+            }
+            .container {
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+            }
+            div {
+                border: 1px solid black;
+                margin: 10px;
+            }
+            .px {
+                width: 37.8px;
+                height: 37.8px;
+            }
+            .cm {
+                width: 1cm;
+                height: 1cm;
+            }
+            .mm {
+                width: 10mm;
+                height: 10mm;
+            }
+            .Q {
+                width: 40Q;
+                height: 40Q;
+            }
+            .px-in {
+                width: 96px;
+                height: 96px;
+            }
+            .in {
+                width: 1in;
+                height: 1in;
+            }
+            .pt {
+                width: 10pt;
+                height: 10pt;
+            }
+            .pc {
+                width: 10pc;
+                height: 10pc;
+            }
+
+            .em {
+                width: 3em;
+                height: 3em;
+            }
+            .ex {
+                width: 3ex;
+                height: 3ex;
+            }
+            .ch {
+                width: 1ch;
+                height: 3ch;
+            }
+            .rem {
+                width: 10rem;
+                height: 10rem;
+            }
+            .line-height {
+                line-height: 10px;
+            }
+            .lh {
+                width: 1lh;
+                height: 1lh;
+            }
+            .rlh {
+                width: 1rlh;
+                height: 1rlh;
+            }
+            .vw {
+                width: 10vw;
+            }
+            .vh {
+                height: 10vh;
+            }
+            .vmin {
+                width: 1vmin;
+                height: 1vmin;
+            }
+            .vmax {
+                width: 1vmax;
+                height: 1vmax;
+            }
+            .percentage {
+                width: 50%;
+                height: 50%;
+            }
+            .vb {
+                width: 10vb;
+                height: 10vb;
+            }
+            .vi {
+                width: 10vi;
+                height: 10vi;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <h1>Absolute Unit</h1>
+            <div class="px">37 px</div>
+            <div class="cm">1 cm</div>
+            <div class="mm">10 mm</div>
+            <div class="Q">40 Q</div>
+            <div class="px-in">96 px</div>
+            <div class="in">1 in</div>
+            <div class="pt"></div>
+            <div class="pc">10 pc</div>
+        </section>
+
+        <section class="container">
+            <h1>Relative units</h1>
+            <p>this is font size of 16px</p>
+            <div class="em">3 em</div>
+            <div class="ex">x</div>
+            <div class="ch">0</div>
+            <div class="rem">10rem</div>
+            <div class="line-height">
+                <div class="lh"></div>
+            </div>
+            <div class="line-height-root">
+                <div class="rlh"></div>
+            </div>
+            <div class="vw">vw</div>
+            <div class="vh">vh</div>
+            <div class="vmin"></div>
+            <div class="vmax"></div>
+            <div class="percentage">%</div>
+        </section>
+        <section class="container">
+            <h1>Vb & Vi</h1>
+            <div class="vb">vb</div>
+            <div class="vi">vi</div>
+        </section>
+        <section>
+            <h1></h1>
+        </section>
+    </body>
+</html>
