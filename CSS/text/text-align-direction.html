@@ -15,22 +15,21 @@
                 text-align: justify;
             }
             .para-4 {
+                background-color: yellow;
                 text-align-last: right;
             }
             .para-5 {
                 text-align: right;
             }
-            .para-8 {
-                text-align: right;
-            }
-            .para-8 span {
-                outline: 1px solid black;
-            }
             .para-6 {
                 direction: rtl;
             }
             .para-7 {
+                unicode-bidi: bidi-override;
+            }
+            .para-8 {
                 direction: rtl;
+                unicode-bidi: bidi-override;
             }
         </style>
     </head>
@@ -91,9 +90,11 @@
             perferendis error architecto incidunt voluptatem, esse quo
             doloremque dolores ipsum natus a!
         </p>
-        <p class="para-5">Para 5 Hello World</p>
-        <p class="para-8"><span>Para 8 Hello World</span></p>
-        <p class="para-6">Para 6 Hello World</p>
-        <p class="para-7"><span>Para 7 Hello World</span></p>
+        <p class="para-5">Para 5 align right</p>
+        <p class="para-6">Para 6 direction rtl</p>
+        <p class="para-7">Para 7 unicode-bidi: bidi-override</p>
+        <p class="para-8">
+            Para 8 unicode-bidi: bidi-override with direction: rtl;
+        </p>
     </body>
 </html>

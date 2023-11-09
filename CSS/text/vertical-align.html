@@ -20,7 +20,12 @@
             section p img {
                 width: 10px;
                 height: 10px;
-                vertical-align: super;
+            }
+            .super {
+                vertical-align: sub;
+            }
+            .top {
+                vertical-align: baseline;
             }
         </style>
     </head>
@@ -34,7 +39,8 @@
                 adipisicing elit. Voluptatem consequatur maxime sed accusamus
                 alias veniam soluta facere eaque deleniti eos. Suscipit pariatur
                 facilis dolores repudiandae corrupti enim adipisci placeat
-                natus? <img src="2.png" alt="" />
+                natus? <img src="2.png" class="top" alt="" />
+                <img src="2.png" class="super" alt="" />
             </p>
         </section>
     </body>
