@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                margin: 100px;
+            }
+            div {
+                margin: 10px;
+            }
+            .without-perspective {
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                transition: all 2s;
+            }
+            .without-perspective:hover {
+                transform: rotateY(180deg);
+            }
+
+            .perspective-1 {
+                width: 100px;
+                height: 100px;
+                background-color: chocolate;
+                transition: all 2s;
+            }
+            .perspective-1:hover {
+                transform: perspective(100px) rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="without-perspective"></div>
+        <div class="perspective-1"></div>
+    </body>
+</html>

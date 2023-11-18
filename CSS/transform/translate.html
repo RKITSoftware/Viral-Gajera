@@ -19,13 +19,19 @@
                 width: 100px;
                 height: 100px;
                 background-color: blue;
-                transform: translate(100%, 10px);
+                transform: translate(90%, 10px);
             }
-            .translate-3d {
+            .translate-x {
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                transform: translateX(200%);
+            }
+            .translate-y {
                 width: 100px;
                 height: 100px;
                 background-color: violet;
-                transform: translate3d(10px, 20px, 500px);
+                transform: translateX(300%);
             }
         </style>
     </head>
@@ -38,9 +44,10 @@
         </section>
         <section>
             <h1>Translate</h1>
-            <div class="translate-1"></div>
-            <div class="translate-2"></div>
-            <div class="translate-3d"></div>
+            <div class="translate-1">translate(x)</div>
+            <div class="translate-2">translate(x,y)</div>
+            <div class="translate-x">translate-x</div>
+            <div class="translate-y">translate-y</div>
         </section>
     </body>
 </html>

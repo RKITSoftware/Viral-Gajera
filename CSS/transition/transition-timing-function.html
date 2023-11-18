@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+            }
+            .box {
+                /* border: 1px solid gainsboro; */
+                margin: 10px;
+                padding: 10px;
+                width: 200px;
+            }
+            .box1 {
+                background-color: violet;
+                transition: all 2s ease;
+            }
+            .box2 {
+                background-color: aqua;
+                transition: all 2s ease-in;
+            }
+            .box3 {
+                background-color: yellow;
+                transition: all 2s ease-out;
+            }
+            .box4 {
+                background-color: pink;
+                transition: all 2s ease-in-out;
+            }
+            .box5 {
+                background-color: lightblue;
+                transition: all 2s linear;
+            }
+            .box6 {
+                background-color: lightcoral;
+                transition: all 2s step-start;
+            }
+            .box7 {
+                background-color: lightgreen;
+                transition: all 2s step-end;
+            }
+            .container:hover .box {
+                width: 95%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box5">linear</div>
+            <div class="box box1">ease</div>
+            <div class="box box2">ease in</div>
+            <div class="box box3">ease out</div>
+            <div class="box box4">ease in out</div>
+            <div class="box box6">step start</div>
+            <div class="box box7">step end</div>
+        </div>
+    </body>
+</html>

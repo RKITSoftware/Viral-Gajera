@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            .container {
+                margin: auto;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                transition: all 5s;
+                background-image: linear-gradient(
+                    45deg,
+                    black,
+                    rgb(131, 131, 131)
+                );
+                background-repeat: no-repeat;
+            }
+            .plane {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+                perspective: 100px;
+            }
+
+            .left {
+                background-color: red;
+                transform: translateX(-50%) perspective(100px) rotateY(64deg);
+            }
+            .right {
+                background-color: violet;
+                transform: translateX(50%) perspective(100px) rotateY(-64deg);
+            }
+            .top {
+                background-color: coral;
+                transform: translateY(-50%) perspective(100px) rotateX(-64deg);
+            }
+            .bottom {
+                background-color: royalblue;
+                transform: translateY(50%) perspective(100px) rotateX(64deg);
+            }
+            .end {
+                background-color: aqua;
+                transform: scale(0.7);
+            }
+            .front {
+                background-color: black;
+                transform: scale(1.82);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="plane left">left</div>
+            <div class="plane right">rihgt</div>
+            <div class="plane top">top</div>
+            <div class="plane bottom">bottom</div>
+            <div class="plane end">end</div>
+            <div class="plane front">Front</div>
+        </div>
+    </body>
+</html>

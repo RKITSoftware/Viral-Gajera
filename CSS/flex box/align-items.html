@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid black;
+                min-height: 300px;
+
+                display: flex;
+            }
+            .item {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            .container1 {
+                align-items: normal;
+                /* align-items: stretch; */
+            }
+            .container2 {
+                align-items: center;
+            }
+            .container3 {
+                align-items: start;
+                /* flex-direction: column-reverse; */
+            }
+            .container4 {
+                align-items: flex-start;
+                /* flex-direction: column-reverse; */
+            }
+            .container5 {
+                align-items: self-start;
+                /* flex-direction: column-reverse; */
+            }
+
+            /* 6 */
+            .container6 {
+                align-items: baseline;
+            }
+            .container6 .item {
+                display: flex;
+                align-items: center;
+            }
+            .container6 .item1 {
+                height: 100px;
+            }
+            .container6 .item2 {
+                height: 200px;
+            }
+            .container6 .item3 {
+                height: 20px;
+            }
+
+            /* 7 */
+            .container7 {
+                align-items: first baseline;
+            }
+            .container7 .item {
+                display: flex;
+                align-items: center;
+
+                /* text-decoration: underline 1px black; */
+            }
+            .container7 .item1 {
+                height: 100px;
+            }
+            .container7 .item2 {
+                height: 200px;
+            }
+            .container7 .item3 {
+                height: 20px;
+            }
+
+            /* 8 */
+            .container8 {
+                align-items: last baseline;
+            }
+            .container8 .item {
+                display: flex;
+                align-items: center;
+                /* text-decoration: underline 1px black; */
+            }
+            .container8 .item1 {
+                height: 100px;
+            }
+            .container8 .item2 {
+                height: 200px;
+            }
+            .container8 .item3 {
+                height: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container container1">
+            <div class="item item1">default - stretch</div>
+            <div class="item item2">default - stretch</div>
+            <div class="item item3">default - stretch</div>
+        </div>
+        <div class="container container2">
+            <div class="item item1">center</div>
+            <div class="item item2">center</div>
+            <div class="item item3">center</div>
+        </div>
+        <div class="container container3">
+            <div class="item item1">start 1</div>
+            <div class="item item2">start 2</div>
+            <div class="item item3">start 3</div>
+        </div>
+        <div class="container container4">
+            <div class="item item1">flex start 1</div>
+            <div class="item item2">flex start 2</div>
+            <div class="item item3">flex start 3</div>
+        </div>
+        <div class="container container5">
+            <div class="item item1">self start 1</div>
+            <div class="item item2">self start 2</div>
+            <div class="item item3">self start 3</div>
+        </div>
+        <div class="container container6">
+            <div class="item item1">baseline</div>
+            <div class="item item2">baseline</div>
+            <div class="item item3">baseline</div>
+        </div>
+        <div class="container container7">
+            <div class="item item1">first baseline</div>
+            <div class="item item2">first baseline</div>
+            <div class="item item3">first baseline</div>
+        </div>
+        <div class="container container8">
+            <div class="item item1">last baseline</div>
+            <div class="item item2">last baseline</div>
+            <div class="item item3">last baseline</div>
+        </div>
+    </body>
+</html>

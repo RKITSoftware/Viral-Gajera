@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+            }
+            .box {
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+            }
+            @media screen and (width: 700px) {
+                .box1 {
+                    background-color: red;
+                }
+            }
+            @media screen and (min-width: 800px) {
+                .box2 {
+                    background-color: violet;
+                }
+            }
+            @media screen and (max-width: 800px) {
+                .box3 {
+                    background-color: violet;
+                }
+            }
+            @media screen and (any-hover: hover) {
+                .box4:hover {
+                    background-color: yellow;
+                }
+            }
+            @media screen and (any-hover: none) {
+                .box5:hover {
+                    background-color: yellow;
+                }
+            }
+            @media screen and (aspect-ratio: 1/1) {
+                .box6 {
+                    background-color: lightcoral;
+                }
+            }
+            @media screen and (color) {
+                .box7 {
+                    background-color: lightblue;
+                }
+            }
+            @media screen and (orientation: landscape) {
+                .box8 {
+                    background-color: lightcoral;
+                }
+            }
+            @media screen and (min-resolution: 80dpi) {
+                .box9 {
+                    background-color: lightgreen;
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                .box10 {
+                    background-color: lightseagreen;
+                }
+            }
+            @media (prefers-color-scheme: light) {
+                .box11 {
+                    background-color: lightseagreen;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1">box 1 : width 700px</div>
+            <div class="box box2">box 2 : min width 800px</div>
+            <div class="box box3">box 3 : max width 800px</div>
+            <div class="box box4">box 4 : any-hover : hover</div>
+            <div class="box box5">box 5 : any-hover : none</div>
+            <div class="box box6">box 6 : aspect ration</div>
+            <div class="box box7">box 7 : color</div>
+            <div class="box box8">box 8 : orientation</div>
+            <div class="box box9">box 9 : Resolution</div>
+            <div class="box box10">box 10 : prefers-color-scheme: dark</div>
+            <div class="box box11">box 11 : prefers-color-scheme: light</div>
+            <div class="box box12">box 12 :</div>
+            <div class="box box13">box 13 :</div>
+            <div class="box box14">box 14 :</div>
+            <div class="box box15">box 15 :</div>
+            <div class="box box16">box 16 :</div>
+            <div class="box box17">box 17 :</div>
+            <div class="box box18">box 18 :</div>
+            <div class="box box19">box 19 :</div>
+            <div class="box box20">box 20 :</div>
+        </div>
+    </body>
+</html>

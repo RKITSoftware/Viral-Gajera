@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                border: 1px solid black;
+                margin: 10px;
+                padding: 10px;
+
+                display: flex;
+            }
+            .item {
+                border: 1px solid black;
+                padding: 10px;
+
+                /* flex-grow: 1; */
+            }
+
+            .container1 {
+                justify-content: center;
+            }
+            .container2 {
+                flex-direction: row-reverse;
+                justify-content: start;
+            }
+            .container3 {
+                justify-content: flex-start;
+                /* justify-content: start; */
+
+                flex-direction: row-reverse;
+            }
+            .container4 {
+                /* justify-content: flex-start; */
+                /* justify-content: start; */
+
+                /* direction: ltr; */
+                direction: rtl;
+            }
+            .container5 {
+                justify-content: normal;
+            }
+
+            .container6 {
+                justify-content: space-between;
+            }
+            .container7 {
+                justify-content: space-around;
+            }
+            .container8 {
+                justify-content: space-evenly;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container container1">
+            <div class="item item1">center</div>
+            <div class="item item2">center</div>
+            <div class="item item3">center</div>
+        </div>
+        <div class="container container2">
+            <div class="item item1">start</div>
+            <div class="item item2">start</div>
+            <div class="item item3">start</div>
+        </div>
+        <div class="container container3">
+            <div class="item item1">start vs flex-start</div>
+            <div class="item item2">start vs flex-start</div>
+            <div class="item item3">start vs flex-start</div>
+        </div>
+        <div class="container container4">
+            <div class="item item1">effect of direction</div>
+            <div class="item item2">effect of direction</div>
+            <div class="item item3">effect of direction</div>
+        </div>
+        <div class="container container5">
+            <div class="item item1">normal</div>
+            <div class="item item2">normal</div>
+            <div class="item item3">normal</div>
+        </div>
+        <div class="container container6">
+            <div class="item item1">space-between</div>
+            <div class="item item2">space-between</div>
+            <div class="item item3">space-between</div>
+        </div>
+        <div class="container container7">
+            <div class="item item1">space-around</div>
+            <div class="item item2">space-around</div>
+            <div class="item item3">space-around</div>
+        </div>
+        <div class="container container8">
+            <div class="item item1">space-evenly</div>
+            <div class="item item2">space-evenly</div>
+            <div class="item item3">space-evenly</div>
+        </div>
+    </body>
+</html>
